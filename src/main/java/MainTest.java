@@ -1,6 +1,5 @@
 import com.sun.jna.platform.win32.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.browserlaunchers.locators.SafariLocator;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.ie.*;
@@ -8,9 +7,6 @@ import org.openqa.selenium.support.ui.*;
 
 public class MainTest {
     public static void main(String[] args) {
-        // Create a new instance of the Firefox driver
-        // Notice that the remainder of the code relies on the interface,
-        // not the implementation.
         WebDriver driver = null;
         String productName = Advapi32Util.registryGetStringValue(
                 WinReg.HKEY_CURRENT_USER, "SOFTWARE\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\http\\UserChoice", "ProgId");
