@@ -1,6 +1,5 @@
 import com.sun.jna.platform.win32.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.browserlaunchers.locators.SafariLocator;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.ie.*;
